@@ -8,8 +8,6 @@ const Dashboard = () => {
   const { user } = useGlobalContext();
   const { role } = user;
 
-  console.log("role in dashboard: ", role);
-
   if (role === 0) {
     return (
       <div>

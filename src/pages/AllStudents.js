@@ -6,8 +6,8 @@ import { formatDate } from "./../utils/index";
 
 const AllStudents = () => {
   const { user, personDetails, jwtToken } = useGlobalContext();
-  const { _id: teacherId } = personDetails;
-  const { _id: userId } = user;
+  const { _id: teacherId, userId } = personDetails;
+
   const [students, setStudents] = useState([]);
 
   const fetchStudents = async () => {
