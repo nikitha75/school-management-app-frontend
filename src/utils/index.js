@@ -21,7 +21,8 @@ export const formatDate = (date) => {
 };
 
 export const trimNum = (num, firstDigits, count) => {
-  const nm = num.toString();
+  if (!num) return;
+  const nm = num && num.toString();
   const fd = nm.slice(0, firstDigits);
   const ld = nm.slice(-count);
   return fd + ld;

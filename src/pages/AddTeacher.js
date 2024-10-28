@@ -11,7 +11,6 @@ const AddTeacher = () => {
     name: "",
     gender: "",
     dob: "",
-    salary: "",
     phone: "",
     address: "",
   });
@@ -95,16 +94,6 @@ const AddTeacher = () => {
                   id="teacherDOB"
                   name="dob"
                   value={formData.dob}
-                  handleChange={handleChange}
-                  containerClass="flex justify-between"
-                  className="w-[240px] px-1 h-[40px] rounded text-gray-700 focus:outline-[#457c54]"
-                />
-                <FormInput
-                  labelText="Salary"
-                  type="Number"
-                  id="teacherSalary"
-                  name="salary"
-                  value={formData.salary}
                   handleChange={handleChange}
                   containerClass="flex justify-between"
                   className="w-[240px] px-1 h-[40px] rounded text-gray-700 focus:outline-[#457c54]"

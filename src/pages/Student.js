@@ -117,9 +117,9 @@ const Student = () => {
                       Class
                     </td>
                     <td className="w-full text-gray-500 font-medium">
-                      {student && student._id
+                      {student && student.class
                         ? "C" + trimNum(student.class, 0, 4)
-                        : null}
+                        : "Not Assigned Yet"}
                     </td>
                   </tr>
                 </tbody>
